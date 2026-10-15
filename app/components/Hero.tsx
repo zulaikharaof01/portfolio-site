@@ -1,10 +1,19 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-indigo-50 to-white"
+      className="min-h-screen flex items-center justify-center text-center px-6 pt-20 bg-gradient-to-b from-indigo-50 to-white"
     >
       <div>
+        <Image
+          src="/image.png"
+          alt="Ain Zulaikha"
+          width={160}
+          height={160}
+          className="w-40 h-40 rounded-full object-cover mx-auto mb-6 border-4 border-white shadow-lg"
+        />
         <p className="text-indigo-700 font-medium mb-2">Hello, I'm</p>
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Ain Zulaikha</h1>
         <p className="text-xl md:text-2xl text-indigo-700 font-medium mb-4">
